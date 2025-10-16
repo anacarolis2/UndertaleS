@@ -1,0 +1,376 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('/SITE/PressStart2P-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'determinationmonoweb-webfont';
+    src: url('/SITE/determinationmonoweb-webfont.ttf') format('truetype');
+}
+
+.introducao {
+    width: 927px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 20px;
+    text-align: center;
+    justify-items: center;
+    margin-left: auto;   
+    margin-right: auto;
+
+
+}
+
+.oqVcQuer {
+    margin-top: 130px;
+
+}
+
+body.corpo {
+    font-family: 'determinationmonoweb-webfont';
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.k {
+    opacity: 1;
+}
+
+.k.dps2 {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+
+.paragrafo {
+    color: aliceblue;
+    margin: 20px;
+}
+
+.botao {
+    position: relative;
+    color: white;
+    border: none;
+    background: transparent;
+    font-family: 'determinationmonoweb-webfont';
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.botao img {
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    /* invisível */
+    transition: opacity 0.3s ease;
+}
+
+
+.botao:hover img {
+    opacity: 1;
+}
+
+
+.botao:hover {
+    color: #F9FF10;
+}
+
+/* esse é o bloco q as falas d flor estão 
+o problema é que ela não fica fixa e se molda de acordo com a quantidade de frase 
+queria que ela tivesse um tama nho fixo igual a foto q te mostrei*/
+
+.container {
+    border: 7px solid white;
+    padding: 0 0 0 30px;
+    margin: 0;
+    width: 100%;
+    max-width: 607px;
+    min-width: 500px;
+    min-height: 150px;
+    box-sizing: border-box;
+    /* Ensures padding and border are included in the total width/height */
+
+}
+
+
+/* AMEAÇA FLOWEY*/
+/* esse é o estilo do link*/
+.pisca {
+    opacity: 1;
+}
+
+.pisca.dps {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #F9FF10;
+}
+
+p {
+    margin: 0;
+}
+
+.pergunta {
+    opacity: 0;
+}
+
+.pergunta.visivel {
+    opacity: 1;
+    transition: opacity 3s;
+}
+
+/* essa é parte das palavras d flowey do dialogo*/
+
+.cor_flowey {
+    color: #F9FF10;
+}
+
+@keyframes flash-red {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: inherit;
+    }
+}
+
+.flashy {
+    animation: flash-red 0.5s ease-out;
+}
+
+
+/* AMEAÇA FLOWEY*/
+
+.palavras {
+    margin: 4% 1%;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: start;
+    padding-left: 10px;
+}
+
+.cor_flowey {
+    color: #F9FF10;
+}
+.continuar{
+    opacity: 0;
+}
+.continuar.visivel2{
+    opacity: 1;
+    transition: opacity 3s;
+}
+/* APRESENTAÇÃO*/
+
+
+
+* {
+    background-color: black;
+}
+
+/* top bar */
+
+.top-bar {
+    width: 100%;
+    background-color: #505050;
+    height: 65px;
+}
+
+.top-bar ul {
+    list-style: none;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 45px;
+    color: white;
+    padding: 0;
+    margin-top: 10px;
+    float: right;
+    margin-right: 50px;
+    background-color: transparent;
+
+}
+
+.top-bar li {
+    display: inline;
+    margin-right: 15px;
+    background-color: transparent;
+}
+
+.top-bar a:hover {
+    color: rgb(222, 60, 60);
+    font-weight: bold;
+    background-color: transparent;
+}
+
+
+
+.dog {
+    background-image: url(https://vignette.wikia.nocookie.net/subnautica/images/2/28/Annoying_Dog_Sleeping.gif/revision/latest?cb=20161228022648);
+    height: 50px;
+    width: 120px;
+    display: block;
+    float: left;
+    background-size: cover;
+    margin: 0px 80px 0px 150px;
+    padding: 10px;
+    background-color: transparent;
+
+}
+
+
+
+/* APRESENTAÇÃO*/
+
+.primeiro {
+    text-align: center;
+    font-family: 'determinationmonoweb-webfont';
+}
+
+
+.temmie-overlay {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 125px;
+}
+
+.download-container {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 400px;
+    margin-bottom: 400px;
+    width: 600px;
+
+}
+
+.repetitive-text {
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.texto {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #D3D3D3;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+
+.pegadinha {
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #D3D3D3;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.pendura {
+    margin-top: 400px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #D3D3D3;
+    font-size: 30px;
+    text-align: center;
+}
+
+.imgs1 {
+    justify-content: center;
+
+}
+
+.contai {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #D3D3D3;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.logo {
+    display: block;
+    max-width: 100%;
+    width: 930px;
+    height: 90px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+}
+
+.fotr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #505050;
+    text-decoration: none;
+    color: #1d1d1d;
+    height: 50px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.aFooter {
+    background-color: transparent;
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.aFooter:hover {
+    color: #000000;
+}
